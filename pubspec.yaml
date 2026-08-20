@@ -2,6 +2,7 @@ name: glass_morphic_lite
 description: "A high-performance, lightweight glassmorphic container widget for Flutter with zero external dependencies."
 version: 0.0.1
 homepage: https://github.com/mbonimana/glass_morphic_lite
+repository: https://github.com/mbonimana/glass_morphic_lite
 
 environment:
   sdk: ^3.12.2
