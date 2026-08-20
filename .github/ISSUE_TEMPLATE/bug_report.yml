@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a defect in glass_morphic_lite
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug! Please fill out every field
+        so we can reproduce and fix the issue quickly.
+
+  - type: input
+    id: package_version
+    attributes:
+      label: glass_morphic_lite version
+      description: The version from your `pubspec.yaml` (or `pubspec.lock`).
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: flutter_version
+    attributes:
+      label: Flutter version
+      description: Paste the full output of `flutter --version`.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include stack traces and logs if available.
+    validations:
+      required: true
